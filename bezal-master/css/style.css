@@ -1,0 +1,745 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #787878;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+#home .carousel-item h1
+{
+    transform: scale(1);
+    animation: move 4s;
+}
+
+@keyframes move {
+    0%{ 
+        transform: scale(0);
+    }
+   
+    100%{ 
+        transform: scale(1);
+    }
+   
+}
+
+::selection {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+.grey-bg {
+    background-color: #f7f7f7;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #1f1f1f;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+.btn-color {
+    color: #fff;
+    background-color: #00c3da;
+    transition: all 0.3s;
+}
+section {
+    position: relative;
+    background-color: #fff;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 5px 5px 15px 0 rgb(31 31 31 / 7%);
+    height: 60px;
+}
+
+.nav-link {
+    color: #242424;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    padding-right: 1rem !important;
+}
+
+.nav-link:hover {
+    color: #787878;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    color: #242424;
+    line-height: 60px;
+    padding: 0 10px;
+    font-size: 13px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+@media (max-width:991px) {
+   
+.navbar-collapse {
+    background-color: #dee3e4
+    }
+    .social-icon
+    {
+        display: none;
+    }
+}
+
+.icon:hover {
+    color: #787878;
+}
+
+/* Start home */
+
+#home .carousel-item {
+    height: 100vh;
+}
+
+#home .carousel-item .item-img {
+    height: 100%;
+}
+
+#home .w-100 {
+    height: 100%;
+}
+
+.pos {
+    background-color: rgba(31, 31, 31, 0.55);
+    position: absolute;
+    right: 0;
+    left: 0%;
+    top: 0;
+    bottom: 0;
+}
+
+.pos .pos-content {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0%;
+}
+
+.pos h1 {
+    font-size: 4.5rem;
+    letter-spacing: -3px;
+    line-height: 1.25;
+    color: #fff;
+}
+
+.pos h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.pos p {
+    margin-top: 25px;
+}
+
+.pos .btn {
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    border-width: 0;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.04em;
+    overflow: hidden;
+}
+
+.pos .btn-color {
+    color: #fff;
+    background-color: #00c3da;
+}
+
+.pos .btn-color:hover {
+    background-color: #00d5ee;
+    color: #fff;
+}
+
+.pos .btn-light-out {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+    margin-left: 15px;
+    line-height: 48px;
+    border-width: 1px;
+}
+
+.pos .btn-light-out:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #1f1f1f;
+}
+
+@media (max-width:768px) {
+    .pos h1 {
+        font-size: 3rem;
+    }
+}
+
+#home .carousel-control-next, #home .carousel-control-prev {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -50px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+    border-left: 0 !important;
+    overflow: hidden;
+    opacity: 1;
+}
+
+button {
+    position: relative;
+}
+
+button i {
+    transition: all 0.3s;
+    font-size: 1.4rem;
+}
+
+button:hover i {
+    color: #1f1f1f;
+    position: relative;
+    z-index: 5;
+}
+
+.bg-mov {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: right 0.3s;
+}
+
+button:hover .bg-mov {
+    right: 0%;
+}
+
+#home .carousel-control-prev {
+    top: 50%;
+    border-top-right-radius: 3px;
+}
+
+#home .carousel-control-next {
+    top: 58%;
+    border-bottom-right-radius: 3px;
+}
+
+/* End home */
+
+/* Start Page 2 */
+
+#about h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+}
+
+#about p {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+#about .content {
+    padding: 51px;
+}
+
+#about .content span {
+    color: #00c3da !important;
+    font-weight: 400;
+}
+
+#about .content span::after {
+    content: "|";
+    animation: mov 3s infinite;
+}
+
+@keyframes mov {
+    0% {
+        content: "A|";
+    }
+    10% {
+        content: "Ap|";
+    }
+    20% {
+        content: "App|";
+    }
+    30% {
+        content: "Apps|";
+    }
+    40% {
+        content: "Apps|";
+    }
+    50% {
+        content: "App|";
+    }
+    60% {
+        content: "Ap|";
+    }
+    70% {
+        content: "A|";
+    }
+    80% {
+        content: "|";
+    }
+    90% {
+        content: "|";
+    }
+    100% {
+        content: "|";
+    }
+}
+
+.read .btn {
+    padding: 0 30px;
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.btn-bordered {
+    color: #1f1f1f;
+    border-color: #dedede;
+    background-color: transparent;
+    line-height: 48px;
+    border-width: 1px;
+}
+
+.read .text-uppercase {
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+}
+
+.read .btn:hover {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+    color: #fff;
+}
+
+/* End Page 2 */
+
+/* Start Page 3 */
+
+#team {
+    border-top: 1px solid #eee;
+}
+
+.title {
+    position: relative;
+}
+
+.title h2 {
+    font-size: 4rem;
+    color: #dee3e4;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.title .title-p {
+    position: absolute;
+    top: 37px;
+    left: 50%;
+    clear: both;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 2.033rem;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #1f1f1f;
+    transform: translateX(-50%);
+}
+
+.title h4 {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+}
+
+#team .team-content .items {
+    position: relative;
+    overflow: hidden;
+}
+
+#team .team-content .team-info {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 195, 218, 0.9);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#team .team-content .items:hover .team-info {
+    opacity: 1;
+    top: 0%
+}
+
+.team-info {
+    padding: 20px 0;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.team-info .social {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+.team-info .icon {
+    color: #fff;
+}
+
+.team-info .icon:hover {
+    text-shadow: 0 0 6px rgb(255 255 255 / 70%);
+}
+
+.team-info h4 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.team-info span {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* End Page 3 */
+
+/* Start Page 4 */
+
+#services .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    opacity: .7;
+}
+
+#services .item-text h4 {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin-top: 0;
+    color: #fff;
+}
+
+#services .service-title h2 {
+    font-size: 38px;
+    color: #fff;
+    position: relative;
+}
+
+#services .service-title h2::before {
+    content: "W";
+    position: absolute;
+    top: -0.5em;
+    left: -0.15em;
+    font-size: 4.7rem;
+    opacity: 0.06;
+    
+}
+#services ul li
+{
+    padding: 8px 0;
+}
+#services ul li i
+{
+    font-size: 16px;
+    margin-right: 10px;
+}
+/* End Page 4 */
+
+
+
+/* Start Page 5 */
+
+#pricing
+{
+    background-color: #f7f7f7;
+
+}
+#pricing .section-content .pricing-table
+{
+    max-width: 270px;
+    padding: 45px 35px;
+    margin: 50px auto 25px;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgb(0 0 0 / 5%);
+    
+}
+#pricing .section-content .pricing-table.gold
+{
+    background-color: #fff;
+    z-index: 22;
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+.pricing-table .pricing-head h4 {
+    font-size: 13px;
+    margin: 0;
+    font-weight: 400;
+}
+.pricing-table .price {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.pricing-table .price h2 {
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: -5px;
+    margin: 0;
+}
+.pricing-table.gold .price h2
+{
+    color: #00c3da;
+
+}
+.pricing-table .gold-label {
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: #00c3da;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.pricing-table .price h2 span {
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: top;
+}
+.pricing-table .pricing-info {
+    margin-top: 15px;
+}
+.pricing-table .pricing-info ul
+{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.pricing-table .pricing-info ul li
+{
+    padding: 8px 0;
+
+}
+.pricing-table .pricing-sign {
+    padding: 20px 0;
+}
+.btn.btn-sm {
+    padding: 0 16px;
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+
+}
+.btn-shadow {
+    box-shadow: 0 4px 16px rgb(0 0 0 / 7%);
+}
+.btn-shadow:hover {
+    box-shadow: 0 8px 26px rgb(0 0 0 / 10%);
+}
+.btn-color:hover{
+    background-color: #00d5ee;
+    color: #fff;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+/* End Page 5 */
+
+
+/* Start Page 6 */
+
+/* 
+#HAPPY .carousel-indicators {
+    margin-bottom: -10px;
+} */
+
+#HAPPY .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00c3da;
+
+}
+.happy-content
+{
+    background-color: #fff;
+    padding: 75px 100px;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 5%);
+    max-width: 750px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+#HAPPY .row .content {
+    margin: 30px 0;
+}
+
+#HAPPY .item-img {
+    width: 100px;
+    height: 10px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+#HAPPY .item-img img{
+
+transform: translateX(-50%);
+}
+
+#HAPPY h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #282828;
+    font-weight: 600;
+}
+
+#HAPPY .title h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+}
+#HAPPY span {
+    text-transform: uppercase;
+    font-family: 'Poppins', serif;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+}
+#HAPPY button span i
+{
+    color: #333333;
+    font-size: 30px;
+
+}
+#HAPPY button:hover i
+{
+    color: #00c3da;
+
+}
+
+
+#HAPPY .box-p {
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#HAPPY .carousel-control-next, .carousel-control-prev {
+    top: 35%;
+    opacity: 1;
+    height: 50px;
+    margin-top: -25px;
+    font-size: 52px;
+    line-height: 50px;
+    height: 50px;
+    margin-top: -25px;
+    line-height: 50px;
+
+}
+
+/* End Page 6 */
+
+
+/* Start Page 7 */
+
+.form-group {
+    margin-bottom: 25px;
+}
+.form-control {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 50px;
+    border: 2px solid #eee;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+textarea {
+    overflow: auto;
+    height: 100px !important;
+}
+
+#contact .title .title-p 
+{
+    left: 19%;
+}
+
+/* End Page 7 */
